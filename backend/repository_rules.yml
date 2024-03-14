@@ -1,0 +1,18 @@
+name: Check Repository Rules
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check_rules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run code scanning
+        uses: github/codeql-action/analyze@v1
+        with:
+          fail-on-severity: error

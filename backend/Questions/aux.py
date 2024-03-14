@@ -1,8 +1,7 @@
-from fastapi import HTTPException
-from openai import AsyncOpenAI
+##from fastapi import HTTPException
+##from openai import AsyncOpenAI
 """"
 async def get_chatgpt_response(question: str) -> str:
-    # Set your OpenAI API key
     client = AsyncOpenAI(
         # This is the default and can be omitted
     )
