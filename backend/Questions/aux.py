@@ -5,7 +5,6 @@ async def get_chatgpt_response(question: str) -> str:
     # Set your OpenAI API key
     client = AsyncOpenAI(
         # This is the default and can be omitted
-        api_key="",
     )
     model_engine = "gpt-3.5-turbo"
     try:
