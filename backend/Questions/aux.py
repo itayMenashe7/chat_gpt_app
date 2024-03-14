@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 from openai import AsyncOpenAI
-
+""""
 async def get_chatgpt_response(question: str) -> str:
     # Set your OpenAI API key
     client = AsyncOpenAI(
@@ -23,3 +23,4 @@ async def get_chatgpt_response(question: str) -> str:
     except Exception as e:
         # Handle any other errors raised by the OpenAI API
         raise HTTPException(status_code=500, detail=str(e)) from e
+"""
